@@ -12,10 +12,7 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   int _selectedIndex = 0;
-  static const List<Widget> _pages = <Widget>[
-    Calendar(),
-    EventList()
-  ];
+  static const List<Widget> _pages = <Widget>[Calendar(), EventList()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -69,7 +66,7 @@ class _HomepageState extends State<Homepage> {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.list),
+              leading: const Icon(Icons.event_note),
               title: const Text('Events'),
               selected: _selectedIndex == 1,
               onTap: () {
